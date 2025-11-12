@@ -1,6 +1,7 @@
 {
     "name": "com.appleple/event",
     "description": "a-blog cms extension.",
+    "license": "MIT",
     "scripts": {
       "lint": "vendor/bin/phpcs --standard=phpcs.xml",
       "format": "vendor/bin/phpcbf --standard=phpcs.xml",

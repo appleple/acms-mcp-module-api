@@ -16,7 +16,7 @@
     "upload": "gdrive upload -r -p 1PoY-JLkytrV1B9sDBn1xaQviYAyk4eZs ./build/*"
   },
   "author": "com.appleple",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "archiver": "^5.3.0",
     "co": "^4.6.0",
