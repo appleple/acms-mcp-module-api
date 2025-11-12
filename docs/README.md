@@ -9,7 +9,7 @@
 
 ## ダウンロード
 
-<https://github.com/appleple/acms-mcp-module-api/raw/master/build/McpModuleApi.zip>
+<https://github.com/appleple/acms-mcp-module-api/raw/refs/heads/main/build/McpModuleApi.zip>
 
 
 ## インストール方法
