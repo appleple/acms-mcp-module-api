@@ -1,0 +1,108 @@
+<?php
+
+namespace Acms\Plugins\McpModuleApi;
+
+use ACMS_App;
+use Acms\Services\Common\InjectTemplate;
+
+class ServiceProvider extends ACMS_App
+{
+    /**
+     * @var string
+     */
+    public $version = '1.0.0';
+
+    /**
+     * @var string
+     */
+    public $name = 'McpModuleApi';
+
+    /**
+     * @var string
+     */
+    public $author = 'com.appleple';
+
+    /**
+     * @var bool
+     */
+    public $module = false;
+
+    /**
+     * @var false|string
+     */
+    public $menu = false;
+
+    /**
+     * @var string
+     */
+    public $desc = 'MCPサーバー用のモジュール情報を提供するAPIを追加するプラグインです';
+
+    /**
+     * サービスの初期処理
+     */
+    public function init()
+    {
+        $inject = InjectTemplate::singleton();
+        $inject->add('admin-module-select', PLUGIN_DIR . 'McpModuleApi/template/module-select.html');
+    }
+
+    /**
+     * インストールする前の環境チェック処理
+     *
+     * @return bool
+     */
+    public function checkRequirements()
+    {
+        return true;
+    }
+
+    /**
+     * インストールするときの処理
+     * データベーステーブルの初期化など
+     *
+     * @return void
+     */
+    public function install()
+    {
+    }
+
+    /**
+     * アンインストールするときの処理
+     * データベーステーブルの始末など
+     *
+     * @return void
+     */
+    public function uninstall()
+    {
+    }
+
+    /**
+     * アップデートするときの処理
+     *
+     * @return bool
+     */
+    public function update()
+    {
+        return true;
+    }
+
+    /**
+     * 有効化するときの処理
+     *
+     * @return bool
+     */
+    public function activate()
+    {
+        return true;
+    }
+
+    /**
+     * 無効化するときの処理
+     *
+     * @return bool
+     */
+    public function deactivate()
+    {
+        return true;
+    }
+}
