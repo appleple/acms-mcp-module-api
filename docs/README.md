@@ -7,6 +7,11 @@
 - a-blog cms: Ver. 3.2 (3.3+ not tested yet)
 - php: 8.1 – 8.4 (8.5+ not tested yet)
 
+## ダウンロード
+
+<https://github.com/appleple/acms-mcp-module-api/raw/master/build/McpModuleApi.zip>
+
+
 ## インストール方法
 
 拡張アプリをダウンロード後、zip ファイルを解凍して `extension/plugins/` に設置します。
